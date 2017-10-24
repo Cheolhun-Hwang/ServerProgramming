@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html charset=utf8>
+	<head>
+		<title>List Page</title>
+	</head>
+	<body>
+		<div align=center>
+			<h1>ListPage</h1>
+			<hr>
+				<table border="1" width="100%">
+					<tbody>
+						<tr>
+							<th>Name</th>
+							<th>Model Number</th>
+							<th>Series</th>
+						</tr>
+						<%
+							data.forEash((item, index)=>{ %>
+						<tr>
+							<td><%= item.name  %> </td>	
+							<td><%= item.uid  %> </td>	
+							<td><%= item.pass  %> </td>	
+						</tr>
+						<%  }); %>
+					</tbody>
+				</table>
+				<input type="submit" value="가입" />
+		</div>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+doctype html
+html
+	head
+		title registation page
+	body
+		h3 회원가입
+		hr
+		form(name='register', method='POST')
+			div.input
+				span.label Name
+				input(type='text', name='username')
+			div.input
+				span.label Id
+				input(type='text', name='userid')
+			div.input
+				span.label Pass
+				input(type='text', name='userpassward')
+			div.input
+				span.label Again
+				input(type='text', name='useragain')
+			hr
+			div.input
+				input(type='submit', value='가입')

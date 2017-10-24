@@ -1,0 +1,27 @@
+html(lang='ko', charset='utf8')
+    head
+        title 설문조사
+    body
+        div(align='center')
+            h1 정보입력
+            hr
+            form(name='sheetform', method='post', action='/quest')
+                table
+                    tr
+                        td
+                            label 이름
+                        td  
+                            input(type='text', value='', name='uname')
+                    tr
+                        td  
+                            label 생년월일
+                        td
+                            input(type='text', value='', name='dob')
+                hr
+                div
+                    h5 1.좋아하는 색깔
+                    input(type='text', value='', name='color')
+                    h5 2.좋아하는 스마트폰
+                    input(type='text', value='', name='phone')
+                div
+                    input(type='submit', value='입력', name='sheetpost')                

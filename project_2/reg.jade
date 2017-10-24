@@ -1,0 +1,36 @@
+doctype html
+html(lang='kr', charset='utf8')
+  head
+    title 회원가입 페이지
+  body
+    div(align='center')
+      h1 회원가입
+      hr
+      form(name='signup', method='post')
+        table(border='0')
+          tbody
+            tr
+              td
+                label 이름 : 
+              td
+                input(type='text', value='', name='uname')
+              td
+            tr
+              td
+                label 아이디 : 
+              td
+                input(type='text', value='', name='uid')
+              td
+            tr
+              td
+                label 비밀번호 : 
+              td
+                input(type='password', value='', name='passwd')
+              td
+            tr
+              td
+                label 재확인 : 
+              td
+                input(type='password', value='', name='repasswd')
+              td
+        input(type='submit', name='send', value='가입')
