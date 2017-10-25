@@ -11,7 +11,7 @@ router.use((req, res, next)=>{
 router.use("/", (req, res)=>{
     fs.readFile("quest.jade", "utf8", (err, data)=>{
         if(err){
-            res.status(404).send("Error, Load quest.js Fail.... : " + err);
+            res.status(404).send("Error, Load quest.jade Fail.... : " + err);
         }else{
             console.log("Load File Complete");
             const fn = jade.compile(data);

@@ -16,8 +16,8 @@ router.use("/", (req, res)=>{
     let color = req.body.color;
     let phone = req.body.phone;
 
-    if( (name == null || name == undefined) || (dob == '' || dob == undefined) ||
-        (color == null || color==undefined) || (phone == '' || phone == undefined) ){
+    if( (name == '' || name == undefined) || (dob == '' || dob == undefined) ||
+        (color == '' || color==undefined) || (phone == '' || phone == undefined) ){
             res.status(500).send("<div align='center'><h1>설문작성 실패</h1><hr><h5>모든 설문 내용을 작성하셔야합니다.</h5></div>");
     }else{
         console.log('Context : ' + name + ", " + dob + ", " + color + ", " + phone);
